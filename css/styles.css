@@ -361,11 +361,14 @@ section {
   color: #404bbf;
 }
 
+.mobile-address {
+    margin-bottom: 48px;
+}
+
 .mobile-address-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
 }
 
 .mobile-address-item {
@@ -376,6 +379,7 @@ section {
     letter-spacing: 0.02em;
     padding: 0;
     display: block;
+    font-style: normal;
 }
 
 .mobile-address-item.current {
@@ -386,7 +390,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 40px;
-  max-width: 280px;
 }
 
 
@@ -440,7 +443,7 @@ section {
   .main {
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1158px;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
         url(../images/people-office-desk-min.jpg);
@@ -555,7 +558,6 @@ section {
 
 .principles-item {
   width: 288px;
-  height: 120px;
 }
 
 @media screen and (min-width: 768px) {
@@ -600,8 +602,9 @@ section {
 
 .list-text {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
+  color: #434455;
 }
 
 @media screen and (min-width: 1158px) {
@@ -809,7 +812,8 @@ section {
 
 .footer {
   background: #2e2f42;
-  padding: 96px 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -825,20 +829,20 @@ section {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 72px;
-  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
   .footer .container {
       gap: 72px 24px;
-      margin-left: 108px;
+      padding-left: 108px;
     }
 }
 
 @media screen and (min-width: 1158px) {
   .footer .container {
-      flex-wrap: nowrap;
+      padding-left: 15px;
       margin: 0 auto;
+      gap: 0;
     }
 }
 
@@ -1278,6 +1282,8 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
   
   fill: transparent;
   
